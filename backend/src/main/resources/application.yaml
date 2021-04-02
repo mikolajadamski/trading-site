@@ -1,0 +1,13 @@
+app:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/trading-site
+    username: trading-site
+    password: trading-site
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  data:
+    rest:
+      base-path: /api
