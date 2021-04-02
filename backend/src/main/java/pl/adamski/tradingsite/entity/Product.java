@@ -16,7 +16,7 @@ public class Product {
     @Column(name = "id")
     private int Id;
 
-    @OneToMany
+    @ManyToOne
     @JoinColumn(name = "category_id", nullable = false)
     private ProductCategory category;
 
