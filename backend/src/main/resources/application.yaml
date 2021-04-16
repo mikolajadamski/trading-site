@@ -1,10 +1,12 @@
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/trading-site
-    username: trading-site
-    password: trading-site
+    url: jdbc:postgresql://localhost:5432/trading_site_db
+    username: postgres
+    password: Pa$$word47
   jpa:
+    hibernate:
+      ddl-auto: update
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
