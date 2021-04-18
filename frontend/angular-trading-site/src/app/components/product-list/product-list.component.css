@@ -6,3 +6,15 @@
 }.product:hover{
   background-color: rgb(221, 221, 221);
 }
+
+img{
+  max-width: 100%;
+  max-height: auto;
+}
+
+
+
+.product-box h1{
+  font-size: 18px;
+  border-bottom: 1px solid #ccc;
+}
