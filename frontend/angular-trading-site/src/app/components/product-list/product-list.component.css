@@ -1,20 +1,30 @@
-.product{
+.product {
   border-top: 1px solid rgb(197, 197, 197);
   padding: 15px;
   transition: 0.6s;
-
-}.product:hover{
+}
+.product:hover {
   background-color: rgb(221, 221, 221);
 }
 
-img{
-  max-width: 100%;
-  max-height: auto;
+img {
+  width: 100%;
+  height: auto;
 }
 
-
-
-.product-box h1{
+.product-box h1 {
   font-size: 18px;
   border-bottom: 1px solid #ccc;
+  padding: 5px;
+}
+.product-box {
+  display: flex;
+}
+
+.product-img-container {
+  margin: 10px;
+}
+
+.price {
+  justify-self: flex-end;
 }

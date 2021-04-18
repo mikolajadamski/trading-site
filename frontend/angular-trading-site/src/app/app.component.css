@@ -29,6 +29,7 @@
       "header header"
       "filters content"
       "footer footer";
+    padding-right: 10%;
   }
 }
 
@@ -41,6 +42,7 @@
   grid-area: filters;
   padding: 10px;
   background-color: white;
+  min-width: 200px;
 }
 
 .content-container {
@@ -53,4 +55,8 @@
 .footer-container {
   grid-area: footer;
   background-color: white;
+}
+
+.active-link{
+  font-weight: bold;
 }
