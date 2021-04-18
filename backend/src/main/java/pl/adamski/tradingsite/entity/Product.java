@@ -14,7 +14,7 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private int Id;
+    private Long Id;
 
     @ManyToOne
     @JoinColumn(name = "category_id", nullable = false)
@@ -51,7 +51,7 @@ public class Product {
 
     public Product(){}
 
-    public Product(int id,
+    public Product(Long id,
                    ProductCategory category, String sku,
                    String name,
                    String description,
@@ -74,11 +74,11 @@ public class Product {
         this.lastUpdated = lastUpdated;
     }
 
-    public int getId() {
+    public Long getId() {
         return Id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         Id = id;
     }
 
