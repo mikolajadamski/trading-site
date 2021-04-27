@@ -4,7 +4,7 @@
   display: grid;
   background-color: rgb(246, 249, 252);
   grid-template-columns: 1fr;
-  grid-template-rows: 50px auto 1fr auto;
+  grid-template-rows: 80px auto 1fr auto;
   grid-template-areas:
     "header"
     "filters"
@@ -36,6 +36,8 @@
 .header-container {
   grid-area: header;
   background-color: white;
+  display: flex;
+  justify-content: center;
 }
 
 .filters-container {
