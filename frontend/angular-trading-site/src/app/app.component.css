@@ -2,9 +2,9 @@
   width: 100%;
   min-height: 300px;
   display: grid;
-  background-color: rgb(246, 249, 252);
+  background-color: rgb(221, 238, 253);
   grid-template-columns: 1fr;
-  grid-template-rows: 80px auto 1fr auto;
+  grid-template-rows: 100px auto 1fr auto;
   grid-template-areas:
     "header"
     "filters"
@@ -29,7 +29,6 @@
       "header header"
       "filters content"
       "footer footer";
-    padding-right: 10%;
   }
 }
 
@@ -43,13 +42,14 @@
 .filters-container {
   grid-area: filters;
   padding: 10px;
+  margin: 30px;
   background-color: white;
-  min-width: 200px;
+  min-width: 300px;
 }
 
 .content-container {
   grid-area: content;
-  margin: 10px;
+  margin: 30px;
   margin-right: 20px;
   background-color: white;
 }

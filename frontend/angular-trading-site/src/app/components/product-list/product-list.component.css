@@ -9,10 +9,20 @@
 
 
 .product-box h1 {
-  font-size: 18px;
+  font-size: 24px;
   border-bottom: 1px solid #ccc;
   padding: 5px;
 }
+
+.product-box h1:hover {
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .product-box {
   display: flex;
 }

@@ -1,7 +1,7 @@
-Filters
+<div class="filters-header">Filters</div>
 <nav>
-  <ul>
-    <li *ngFor="let category of categories">
+  <ul class="category-list">
+    <li *ngFor="let category of categories" class="category-item">
       <a routerLink="/category/{{ category.id }}" routerLinkActive="active-link">
       {{ category.categoryName }}</a>
     </li>
