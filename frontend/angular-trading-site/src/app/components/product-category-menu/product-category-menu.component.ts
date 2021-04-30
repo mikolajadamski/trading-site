@@ -22,7 +22,6 @@ export class ProductCategoryMenuComponent implements OnInit {
         this.categories = data;
       }
     )
-    console.log(this.categories);
   }
 
 
