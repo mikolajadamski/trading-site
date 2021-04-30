@@ -35,8 +35,7 @@
 .header-container {
   grid-area: header;
   background-color: white;
-  display: flex;
-  justify-content: center;
+
 }
 
 .filters-container {
@@ -62,3 +61,4 @@
 .active-link{
   font-weight: bold;
 }
+
