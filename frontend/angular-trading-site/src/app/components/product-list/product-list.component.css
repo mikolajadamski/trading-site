@@ -29,8 +29,13 @@ a {
 
 .product-img-container {
   margin: 10px;
+  width: 200px;
 }
 
 .price {
   justify-self: flex-end;
+}
+
+.footer-pagination {
+  padding: 0 20px 0 0;
 }
