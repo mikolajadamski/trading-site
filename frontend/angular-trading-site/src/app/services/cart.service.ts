@@ -1,3 +1,4 @@
+import { ThisReceiver } from '@angular/compiler';
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
 import { CartItem } from '../common/cart-item';
@@ -15,22 +16,18 @@ export class CartService {
   constructor() { }
 
   addToCart(cartItem: CartItem) {
-    let isAlreadyInCart: boolean = false;
-    let existingCartItem: CartItem;
+    let existingCartItem: CartItem | undefined;
 
     if (this.cartItems.length > 0){
-      for(let tempCartItem of this.cartItems){
-        if(tempCartItem.id === cartItem.id){
-          isAlreadyInCart = true;
-          tempCartItem.quantity++;
-        }
-      }
+      existingCartItem = this.cartItems.find(tempCartItem => tempCartItem.id === cartItem.id)
     }
 
-    if(!isAlreadyInCart){
+    if(existingCartItem != undefined){
+      !existingCartItem.quantity++;
+    }
+    else{
       this.cartItems.push(cartItem);
     }
-
     this.computeCartTotals();
   }
 
