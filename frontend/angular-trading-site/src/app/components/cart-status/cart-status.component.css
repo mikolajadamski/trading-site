@@ -33,4 +33,5 @@
 .products{
   border-left: 1px solid rgb(39, 115, 160);
   margin-left: 5px;
+  padding-left: 5px;
 }
