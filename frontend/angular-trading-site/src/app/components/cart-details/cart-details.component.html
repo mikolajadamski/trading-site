@@ -1,1 +1,27 @@
-<p>cart-details works!</p>
+<div class="main-content">
+  <div>
+    <div class="container-fluid">
+      <table class="table table-bordered">
+        <tr>
+          <th width="20%">Product Image</th>
+          <th width="50%">Product Detail</th>
+          <th width="30$">Product Price</th>
+        </tr>
+        <tr *ngFor="let cartItem of cartItems">
+          <td>
+            <img src="{{ cartItem.imageUrl }}" class="img-fluid" width="150px" />
+          </td>
+          <td>
+            <p>{{ cartItem.name }}</p>
+          </td>
+          <td>
+            <p>{{ cartItem.unitPrice | currency: 'USD' }}</p>
+            <div>
+              <label>Quantity: </label> {{ cartItem.quantity }}
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
