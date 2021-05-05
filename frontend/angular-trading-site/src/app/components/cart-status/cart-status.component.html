@@ -1,10 +1,15 @@
 <div class="cart-container">
 
-  <div class="total">{{ totalPrice | currency: 'USD'}}<span class="products">{{ totalQuantity }}</span></div>
-  <div class="cart-area">
-    <div class="circle">
-      <i class="fas fa-shopping-basket fa-2x"></i>
+
+  <a routerLink="/cart-details">
+    <div class="total">{{ totalPrice | currency: 'USD'}}<span class="products">{{ totalQuantity }}</span></div>
+  </a>
+    <div class="cart-area">
+      <a routerLink="/cart-details">
+      <div class="circle">
+        <i class="fas fa-shopping-basket fa-2x"></i>
+      </div>
+    </a>
     </div>
 
-  </div>
 </div>
