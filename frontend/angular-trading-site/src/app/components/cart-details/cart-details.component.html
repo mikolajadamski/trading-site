@@ -13,12 +13,22 @@
           </td>
           <td>
             <p>{{ cartItem.name }}</p>
+            <p>{{ cartItem.unitPrice | currency: 'USD' }}</p>
           </td>
           <td>
-            <p>{{ cartItem.unitPrice | currency: 'USD' }}</p>
             <div>
               <label>Quantity: </label> {{ cartItem.quantity }}
             </div>
+            <div>
+              <label>Subtotal: {{   cartItem.quantity * cartItem.unitPrice | currency: 'USD'}}</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2"></td>
+          <td>
+            <p>Total Quantity: {{ totalQuantity }}</p>
+            <p>Total Price: {{ totalPrice | currency: 'USD'}}</p>
           </td>
         </tr>
       </table>
