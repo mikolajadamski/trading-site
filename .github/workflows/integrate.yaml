@@ -10,7 +10,7 @@ env:
   POSTGRESQL_USER: postgres
   POSTGRESQL_PASSWORD: Pa$$word47
   JAVA_VERSION: 1.15
-  NODE_VERSION: 14.16.1
+  NODE_VERSION: 14.16
 
 jobs:
   build:
@@ -39,8 +39,8 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: ${{ env.NODE_VERSION }}
-        - working-directory: ./frontend
+        - working-directory: frontend
         - run: npm ci
         - run: npm run test:prod
         - run: npm run lint
-          
+
