@@ -11,10 +11,4 @@ class TradingSiteApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-
-	@Test
-	void AssertFalseTest(){
-		assertTrue(false);
-	}
-
 }
