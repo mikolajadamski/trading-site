@@ -10,8 +10,8 @@ import { Category } from '../common/category';
 })
 export class ProductService {
 
-  private baseUrl = 'http://localhost:8080/api/products';
-  private categoryUrl = 'http://localhost:8080/api/product_category';
+  private baseUrl = 'api/products';
+  private categoryUrl = 'api/product_category';
   constructor(private httpClient: HttpClient) { }
 
   getProductListPaginate(page: number,
