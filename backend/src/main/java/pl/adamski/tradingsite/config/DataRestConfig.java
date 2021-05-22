@@ -25,6 +25,11 @@ public class DataRestConfig implements RepositoryRestConfigurer {
         this.entityManager = entityManager;
     }
 
+    @Override
+    public void configureRepositoryRestConfiguration(RepositoryRestConfiguration config, CorsRegistry cors) {
+        exposeIds(config);
+    }
+
     private void exposeIds (RepositoryRestConfiguration config) {
 
         Set<EntityType<?>> entities =  entityManager.getMetamodel().getEntities();
