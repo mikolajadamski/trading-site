@@ -4,11 +4,7 @@
   margin: 15px;
 }
 
-.category-item {
-  border: 1px solid rgb(215, 215, 215);
-  padding: 10px;
-  margin: 10px;
-}
+
 .category-list {
   list-style-type: none;
   display: flex;
@@ -17,13 +13,25 @@
   margin: 0;
   padding: 0;
 }
+.category-item-inner {
+  padding: 20px;
+}
+
+.category-item-inner:hover{
+  transition: 0.3s;
+  background-color: rgb(240, 240, 240);
+
+}
+
+.category-item-inner:active{
+  background-color: rgb(220, 220, 220);
+}
+
 @media (min-width: 641px) {
   .category-list {
     flex-direction: column;
   }
-  .category-item {
-    border: none;
-  }
+
   .filters-header {
     display: block;
   }

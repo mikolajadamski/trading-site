@@ -2,9 +2,11 @@
 <nav>
   <ul class="category-list">
     <li *ngFor="let category of categories" class="category-item">
-      <a routerLink="/category/{{ category.id }}" routerLinkActive="active-link">
-      {{ category.categoryName }}</a>
+      <a routerLink="/category/{{category.id}}" routerLinkActive="active-link">
+        <div class="category-item-inner">
+          {{ category.categoryName }}
+        </div>
+      </a>
     </li>
-
   </ul>
 </nav>
