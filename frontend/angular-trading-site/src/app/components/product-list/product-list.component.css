@@ -49,6 +49,7 @@ a {
 
 .page-switcher{
   justify-self: center;
+  align-self: center;
 }
 
 .page-options-text{

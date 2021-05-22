@@ -49,16 +49,9 @@
 
   .filters-container {
     margin: 30px;
+    height: fit-content;
   }
 }
-
-@media (min-width: 1025px) {
-
-}
-
-
-
-
 
 .content-container {
   grid-area: content;
