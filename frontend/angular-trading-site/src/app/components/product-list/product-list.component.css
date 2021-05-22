@@ -42,11 +42,6 @@ a {
   grid-template-columns: 1fr;
 }
 
-.img-responsive {
-  max-width: 100%;
-  height: auto;
-}
-
 .page-switcher{
   justify-self: center;
   align-self: center;
