@@ -37,5 +37,40 @@ a {
 }
 
 .footer-pagination {
-  padding: 0 20px 0 0;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+
+.page-switcher{
+  justify-self: center;
+  align-self: center;
+}
+
+.page-options-text{
+  display: none;
+}
+
+.page-options {
+  justify-self: center;
+}
+
+select {
+  text-decoration: none;
+}
+
+@media (min-width: 641px) {
+
+  .footer-pagination {
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, minmax(0, 1fr));;
+  }
+  .page-switcher {
+    grid-column: 2/4;
+  }
+
+  .page-options {
+    align-self: center;
+    grid-column: 4/5;
+  }
 }
