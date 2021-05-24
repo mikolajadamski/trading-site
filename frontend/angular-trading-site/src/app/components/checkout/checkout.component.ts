@@ -18,13 +18,27 @@ export class CheckoutComponent implements OnInit {
         firstName: [''],
         lastName: [''],
         email: ['']
-      })
+      }),
 
+      shippingAddress: this.formBuilder.group({
+        street: [''],
+        city: [''],
+        zipcode: ['']
+      }),
+
+      creditCard: this.formBuilder.group({
+        cardNumber: [''],
+        expirationDate: [''],
+        nameOnCard: [''],
+        securityCode: ['']
+      })
     })
   }
 
   onSubmit() {
     console.log(this.checkoutFormGroup.get('customer')?.value);
+    console.log(this.checkoutFormGroup.get('shippingAddress')?.value);
+    console.log(this.checkoutFormGroup.get('creditCard')?.value);
   }
 
 }

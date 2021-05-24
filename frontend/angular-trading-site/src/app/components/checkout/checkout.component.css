@@ -1,0 +1,30 @@
+input:focus {
+  outline: none;
+}
+
+.form-container {
+  margin: 40px 60px 40px 60px;
+  padding: 20px;
+  border: 3px solid rgb(146, 144, 144);
+
+}
+
+.form-container h3 {
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  top: -35px;
+  display: inline-block;
+  padding: 0 20px 0 20px;
+}
+
+.form-group {
+  font-size: 24px;
+}
+
+.form-container input {
+  font-size: 20px;
+  border: 1px solid rgb(146, 146, 146);
+  border-radius: 15px;
+  background-color: rgb(240, 240, 240);
+  padding: 5px 10px 5px 10px;
+}
